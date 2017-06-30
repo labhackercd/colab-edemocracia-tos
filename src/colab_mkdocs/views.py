@@ -1,5 +1,7 @@
 from colab.plugins.views import ColabProxyView
 from django.contrib.staticfiles.views import serve
+from django.http import HttpResponse
+from revproxy.transformer import DiazoTransformer
 import os
 
 
@@ -16,4 +18,11 @@ class ColabMkdocsPluginProxyView(ColabProxyView):
 
         path = os.path.join('mkdocs_build', path)
 
-        return serve(request, path, insecure=True)
+        file_response = serve(request, path, insecure=True)
+        response = HttpResponse(file_response.streaming_content,
+                                content_type=file_response.get('Content-type'))
+        diazo = DiazoTransformer(request, response)
+
+        response = diazo.transform(self.diazo_rules, self.diazo_theme_template,
+                                   self.html5)
+        return response
