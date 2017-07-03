@@ -100,3 +100,4 @@ ENV/
 # mypy
 .mypy_cache/
 src/colab_mkdocs/static/mkdocs_build/
+src/colab_mkdocs/mkdocs.yml
