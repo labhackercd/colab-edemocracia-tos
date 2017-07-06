@@ -6,12 +6,14 @@ import os
 
 
 class ColabMkdocsPluginProxyView(ColabProxyView):
-    app_label = 'colab_mkdocs'
+    app_label = 'colab_mkdocs_tos'
     diazo_theme_template = 'proxy/mkdocs.html'
 
     def dispatch(self, request, path):
         dir_path = os.path.dirname(os.path.realpath(__file__))
         docs_path = os.path.join(dir_path, path)
+        print('-' * 80)
+        print(docs_path)
 
         if os.path.isdir(docs_path):
             path = os.path.join(path, 'index.html')

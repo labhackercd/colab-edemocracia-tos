@@ -7,7 +7,6 @@ from .views import ColabMkdocsPluginProxyView
 
 urlpatterns = patterns(
     '',
-    url(r'^(?P<path>.*)$',
-        xframe_options_exempt(ColabMkdocsPluginProxyView.as_view()),
-        name='colab_mkdocs'),
+    url(r'^(?P<path>.*)$', ColabMkdocsPluginProxyView.as_view(),
+        name='colab_mkdocs_tos'),
 )

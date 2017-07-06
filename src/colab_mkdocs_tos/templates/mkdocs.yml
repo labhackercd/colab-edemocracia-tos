@@ -3,6 +3,14 @@ site_name: {{mkdocs_title}}
 docs_dir: '{{mkdocs_dir}}/mkdocs_pages'
 site_dir: '{{mkdocs_dir}}/static/mkdocs_build'
 
+theme: 'material'
+extra:
+  palette:
+    primary: 'green'
+    accent: 'amber'
+  social:
+    - type: 'github'
+      link: 'https://github.com/labhackercd/'
 pages:
   {% for page, md in mkdocs_pages.items %}
   - {{page}}: {{md}}

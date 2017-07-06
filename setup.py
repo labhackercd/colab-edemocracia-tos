@@ -5,13 +5,13 @@ Colab Mkdocs Plugin
 """
 from setuptools import setup, find_packages
 
-install_requires = ['colab', 'mkdocs']
+install_requires = ['colab', 'mkdocs', 'mkdocs-material']
 
 tests_require = ['mock']
 
 
 setup(
-    name="colab-mkdocs",
+    name="colab-mkdocs-tos",
     version='0.1.0',
     author='labhackercd',
     author_email='labhackercd@gmail.com',
