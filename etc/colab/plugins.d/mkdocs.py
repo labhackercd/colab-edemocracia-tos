@@ -17,6 +17,6 @@ pages = {
 
 
 urls = {
-    'include': 'colab_mkdocs.urls',
+    'include': 'colab_mkdocs_tos.urls',
     'prefix': '^sobre/',
 }
