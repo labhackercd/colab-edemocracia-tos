@@ -1,10 +1,16 @@
-from django.utils.translation import ugettext_lazy as _
-from colab.plugins.utils.menu import colab_url_factory
+# -*- coding: utf-8 -*-
 
 name = 'colab_mkdocs'
 verbose_name = 'Colab Mkdocs Plugin Plugin'
 
 upstream = ''
+
+docs_title = "Sobre"
+
+pages = {
+    'Home': 'index.md',
+    'Termos de Serviço': 'tos.md'
+}
 
 
 urls = {
