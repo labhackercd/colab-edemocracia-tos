@@ -22,4 +22,4 @@ class Command(BaseCommand):
             pass
 
         with open(filename, 'w') as config_file:
-            config_file.write(rendered)
+            config_file.write(rendered.encode('utf8'))
