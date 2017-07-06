@@ -7,13 +7,13 @@ upstream = ''
 
 docs_title = "Sobre"
 
-pages = {
-    'Home': 'index.md',
-    'Wikilegis': 'wikilegis.md',
-    'Audiências Interativas': 'audiencias.md',
-    'Expressão': 'expressao.md',
-    'Termos de Serviço': 'tos.md'
-}
+pages = [
+    ('Home', 'index.md'),
+    ('Wikilegis', 'wikilegis.md'),
+    ('Audiências Interativas', 'audiencias.md'),
+    ('Expressão', 'expressao.md'),
+    ('Termos de Serviço', 'tos.md'),
+]
 
 
 urls = {

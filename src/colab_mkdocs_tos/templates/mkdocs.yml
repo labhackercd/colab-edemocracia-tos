@@ -15,7 +15,7 @@ extra:
     - type: 'github'
       link: 'https://github.com/labhackercd/'
 pages:
-{% for name, file in mkdocs_pages.items %}
+{% for name, file in mkdocs_pages %}
   - {{name}}: {{file}}
 {% endfor %}
 extra_css:
