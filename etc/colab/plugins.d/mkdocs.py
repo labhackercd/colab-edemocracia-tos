@@ -8,7 +8,7 @@ upstream = ''
 docs_title = "Sobre"
 
 pages = [
-    ('Home', 'index.md'),
+    ('Página Inicial', 'index.md'),
     ('Wikilegis', 'wikilegis.md'),
     ('Audiências Interativas', 'audiencias.md'),
     ('Expressão', 'expressao.md'),
