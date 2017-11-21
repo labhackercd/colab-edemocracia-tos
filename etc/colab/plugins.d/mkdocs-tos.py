@@ -21,11 +21,8 @@ urls = {
     'prefix': '^sobre/',
 }
 
-# settings_variables = {
-#     'COLAB_STATICS': [
-#         '/colab-plugins/tos/src/colab_mkdocs_tos/static'
-#     ],
-#     'COLAB_TEMPLATES': (
-#         '/colab-plugins/tos/src/colab_mkdocs_tos/static',
-#     )
-# }
+settings_variables = {
+    'COLAB_STATICS': [
+        '/colab-plugins/tos/src/colab_mkdocs_tos/static'
+    ]
+}
