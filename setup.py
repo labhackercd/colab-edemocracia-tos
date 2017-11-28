@@ -12,7 +12,7 @@ tests_require = ['mock']
 
 setup(
     name="colab-mkdocs-tos",
-    version='0.1.3',
+    version='0.2.0',
     author='labhackercd',
     author_email='labhackercd@gmail.com',
     url='https://github.com/labhackercd/colab-mkdocs-plugin',
